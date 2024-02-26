@@ -1,0 +1,188 @@
+.cont-padre{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #72d7d3;
+    height: 800px;
+    width: 800px;
+    z-index: 1;
+    border: 5px solid white;
+    transition: 1s;
+    animation: pulse 10s infinite;
+    filter: blur(5px);
+}
+  
+  @keyframes pulse {
+    0% {
+      background-color: #ff0000;
+      box-shadow: 0px 0px 15px 15px #ff0000;
+    }
+    35%{
+        background: rgb(0, 220, 48);
+        box-shadow: 0px 0px 15px 15px rgb(0, 220, 48);
+    }
+    70% {
+      background-color: #0026ce;
+      box-shadow: 0px 0px 15px 15px #0026ce;
+    }
+    100%{
+        background-color: #ff0000;
+        box-shadow: 0px 0px 15px 15px #ff0000;
+    }
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+/* .cont-padre:hover .sombrero,.cont-padre:hover .cara,.cont-padre:hover .izq-ojo,.cont-padre:hover .der-ojo,.cont-padre:hover .izq-oreja,.cont-padre:hover .der-oreja,.cont-padre:hover .bigote,.cont-padre:hover .nariz,.cont-padre:hover .izq-pie,.cont-padre:hover .der-pie{
+    filter: sepia(50%);
+} */
+
+.cont-padre:hover{
+    border-radius: 500px;
+    filter: blur(0);
+}
+
+.cara{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 25%;
+    z-index: 2;
+    transition: 1s;
+}
+
+.sombrero{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 15%;
+    z-index: 3;
+    transition: 1s;
+}
+
+.sombrero:hover{
+    transform: scaleX(-1);
+}
+
+.izq-ojo{
+    position: absolute;
+    left: 0;
+    right: 80px;
+    margin: auto;
+    top: 33%;
+    z-index: 3;
+    transition: .5s;
+}
+
+.izq-ojo:hover{
+    transform: scale(1.5);
+    z-index: 5;
+    right: 150px;
+}
+
+.der-ojo{
+    position: absolute;
+    left: 80px;
+    right: 0;
+    margin: auto;
+    top: 33%;
+    z-index: 3;
+    transition: .5s;
+}
+
+.der-ojo:hover{
+    transform: scale(1.5);
+    z-index: 5;
+    left: 150px;
+}
+
+.nariz{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40%;
+    z-index: 4;
+    transition: 1s;
+}
+
+.nariz:hover{
+    transform: scale(1.2);
+    rotate: 360deg;
+}
+
+.bigote{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 55.5%;
+    z-index: 3;
+    transition: 1s;
+}
+
+.bigote:hover{
+    rotate: 180deg;
+}
+.izq-oreja{
+    position: absolute;
+    left: 0;
+    right: 280px;
+    margin: auto;
+    top: 30%;
+    z-index: 1;
+    transition: 1s;
+}
+
+.izq-oreja:hover{
+    right: 400px;
+    rotate: 360deg;
+}
+
+.der-oreja{
+    position: absolute;
+    left: 280px;
+    right: 0;
+    margin: auto;
+    top: 30%;
+    z-index: 1;
+    transition: 1s;
+}
+
+.der-oreja:hover{
+    left: 400px;
+    rotate: 360deg;
+}
+
+.izq-pie{
+    position: absolute;
+    left: 0;
+    right: 150px;
+    margin: auto;
+    top: 68%;
+    z-index: 1; 
+    transition: .5s;
+}
+
+.izq-pie:hover{
+    transform: scaleY(-1);
+}
+
+.der-pie{
+    position: absolute;
+    left: 150px;
+    right: 0;
+    margin: auto;
+    top: 68%;
+    z-index: 1; 
+    transition: .8s;
+}
+
+.der-pie:hover{
+    transform: scaleY(-1);
+}
